@@ -1,0 +1,13 @@
+Apuntes Laravel 6 api:
+
+1. Se crea el archivo de prueba con << php artisan make:test nombreDeLaPruebaTest >>
+
+2. Se crea el modelo junto con las factory y las migraciones con << php artisan make:model NombreModelo -fm >> 
+
+3. Se crea el controlador junto con el param api y con la conexion al modelo con << php artisan make:controller Api/NombreController --api --model=Post >>
+
+4. Para los test hay que configurar otra BD con sqlite: 
+	1) En el directorio database se crea el archivo database.sqlite;
+	2) En el directorio config, en el archivo database.php se edita el array en su posicion 'sqlite', 'database'
+
+5. En TDD se desarrolla primero el test y luego se desarrolla el codigo
